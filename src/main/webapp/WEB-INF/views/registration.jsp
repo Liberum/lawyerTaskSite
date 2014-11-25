@@ -6,7 +6,8 @@
 	<div class="panel-heading">
 		<h3 class="panel-title">Registration</h3>
 
-  
+  <%//TODO ограничение логина и пароля в 45 сим
+  %>
   <br>
   <a href="login.do" class="btn btn-default btn-lg btn-block" role="button">Back</a>
   	</div>

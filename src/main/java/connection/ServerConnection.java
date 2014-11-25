@@ -7,8 +7,8 @@ import java.net.ConnectException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-import connection.dto.Response;
 import users.dto.User;
+import connection.dto.Response;
 
 public class ServerConnection {
 	
@@ -22,6 +22,7 @@ public class ServerConnection {
 		try {
 			Socket socket = new Socket(ip, port);
 			ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
+			//TODO юзера поменять на response 
 			 oos.writeObject(user);
 			 
 			 
