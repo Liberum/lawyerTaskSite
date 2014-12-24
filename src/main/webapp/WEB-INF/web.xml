@@ -10,12 +10,22 @@
   </servlet>
   
   <servlet>
-    <servlet-name>Authorization</servlet-name>
-    <servlet-class>lawyerTaskSite/src/main/java/servlets/Authorization</servlet-class>
+    <servlet-name>Registration</servlet-name>
+    <servlet-class>lawyerTaskSite/src/main/java/servlets/Registration</servlet-class>
   </servlet>
   
   <servlet>
     <servlet-name>Error</servlet-name>
     <servlet-class>lawyerTaskSite/src/main/java/servlets/Error</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>ResetPassword</servlet-name>
+    <servlet-class>lawyerTaskSite/src/main/java/servlets/ResetPasswordServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>TaskList</servlet-name>
+    <servlet-class>lawyerTaskSite/src/main/java/servlets/TaskList</servlet-class>
+  </servlet>
+  
+  
 </web-app>

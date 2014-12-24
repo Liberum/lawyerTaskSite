@@ -7,7 +7,6 @@ import java.net.ConnectException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-import users.dto.User;
 import connection.dto.Response;
 
 public class ServerConnection {
@@ -17,15 +16,13 @@ public class ServerConnection {
 	public static int port = 2233;
 	public static String ip = "127.0.0.1";
 	
-	public Response sendObject(User user){
+	public Response sendObject(Response response){
 		
 		try {
 			Socket socket = new Socket(ip, port);
 			ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
-			//TODO юзера поменять на response 
-			 oos.writeObject(user);
-			 
-			 
+			 oos.writeObject(response);
+			 			 
 			 ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
 			 try {
 					Response serverResponse = (Response) ois.readObject();
